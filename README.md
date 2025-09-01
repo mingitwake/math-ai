@@ -15,8 +15,7 @@ python -m venv .venv
 
 pip install google-adk litellm crewai "crewai[tools]"
 ```
-Create folder "Google-ADK"
-Move folder "autograder" into "Google-ADK"
+
 Create a .env file for the credentials
 ```
 .env
