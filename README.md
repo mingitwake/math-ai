@@ -27,6 +27,7 @@ Create a .env file for the credentials
 ```
 
 The project structure should look like this:
+```
 math-ai/
     .venv
     Google-ADK/
@@ -37,6 +38,7 @@ math-ai/
             prompt
     app/..
     pix2text/..
+```
 
 #### Other Dependencies
 ```
@@ -50,6 +52,7 @@ pip install fastapi uvicorn
 
 #### Testing
 In a new Terminal, activate the virtual environment and navigate to "Google-ADK":
+```
 math-ai/
     .venv
     Google-ADK/ <-- Here
@@ -61,10 +64,12 @@ math-ai/
     app/..
     pix2text/..
 ```
+```
 adk api_server
 ```
-In a new Terminal, activate the virtual environment and navigate to "app":
-math-ai/
+In a new Terminal, activate the virtual environment and navigate to "math-ai":
+```
+math-ai/  <-- Here
     .venv
     Google-ADK/
         .env
@@ -72,9 +77,10 @@ math-ai/
             __init__.py
             agent.py
             prompt
-    app/ <-- Here
+    app/
         main.py
     pix2text/..
+```
 ```
 uvicorn app.main:app --reload --port 9000
 curl http://localhost:9000/docs
